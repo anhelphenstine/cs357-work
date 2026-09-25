@@ -1,1 +1,1 @@
-# cs357-work
+# CS357 scratch repository
