@@ -1,4 +1,4 @@
-# <ProjectName>
+# OpenCode Studio
 
 ## Master Project Charter, Engineering Workflow, and Autonomous Development Plan
 
@@ -8,38 +8,31 @@
 
 # Project Mission
 
-<One or two sentences: what is being built and why. State the product, not the technology.>
+The mission of this project is to create a reliable search program where the user can search from a local knowledge base. The program should give consistent and accurate results and should be simple to use. The program should handle errors appropriately. 
 
 # Engineering Philosophy
 
 Every engineering decision should prioritize, in order:
 
-1. <Highest-ranked value, e.g., Correctness / Preservation / Safety>
-2.  Reproducibility
-3.  Maintainability
-4.  Automation
-5.  Documentation
+1.  Accuracy over speed
+2.  Reproducibility over automation
+3.  Ask for consent over assuming permission
+4.  Small, reversible steps over large ones
+5.  Simplicity over complexity
 
 <!-- The ranking matters more than the list.  When two values conflict mid-task,
      the agent resolves the conflict by rank instead of asking or guessing. -->
 
 # Definition of Success
 
-<A concrete, observable test for "done."  Example: "A new contributor can clone the
-repository, run one documented command, and produce a working build that passes the
-standing test gate.">
-
-# Long-Term Architecture
-
-<The one durable design idea that survives individual tasks: the seam you refuse to
-blur.  Example: "a generic engine plus swappable configuration profiles.">
+A classmate could clone the repository and repeat all actions. They would come up with the same results. 
 
 # Repository Layout
 
 ```
-<ProjectName>/
-|-- START_HERE.md          # entry funnel
-|-- CHARTER.md             # this file
+OpenCode Studio/
+|-- START_HERE.md          # entry funnel: the fixed read order for any new agent
+|-- CHARTER.md             # the constitution: the mission, philosophy, rules, milestones guardrails
 |-- .ai/                   # agent handoff state (see .ai/ templates)
 |-- docs/                  # roadmap, decisions, rfcs, build/test guides
 |-- sources/               # IMMUTABLE inputs - never edited, only read
@@ -50,7 +43,7 @@ Everything under `sources/` is immutable.  Development occurs only inside `work/
 
 # Git Policy
 
-Git is the only version history.  Never create `*_new`, `*_old`, `*_backup`, `*_fixed`, or duplicate edited files.  Overwrite files normally.  Commit frequently.  Each commit should represent one logical engineering change.  Documentation is committed alongside implementation.
+Git is the only version history.  Never create `*_new`, `*_old`, `*_backup`, `*_fixed`, or duplicate edited files.  Overwrite files normally.  Commit frequently.  Each commit should represent one logical enAgineering change.  Documentation is committed alongside implementation.
 
 # Documentation Authority Rule
 
@@ -73,17 +66,6 @@ Every task follows this loop:
 9.  Automatically collect logs.
 10.  Update documentation.
 11.  Commit a single logical change.
-
-# Autonomous Operation Rules
-
-- Verify state before asserting it.  Do not claim an artifact is missing or present without checking the current repository/runtime state first.  Treat prior logs and memory as hints only; repository state and fresh command output are authoritative.
-- Long-running builds and CI wrappers must be polled sparingly.  Prefer 60-120 second polling intervals unless a command is near its timeout or the user explicitly asks for a status update.
-- When a session window, context limit, quota limit, or time limit is approaching, stop new work and prepare a clean handoff before failure.
-- Whenever a bug is fixed, create a regression test that would have detected it.
-
-# Testing Charter
-
-Testing infrastructure is part of the project; the project should become increasingly self-verifying.  Every milestone should leave behind an automated check that the next contributor can run.  If a manual observation is unavoidable, document the exact command, input, expected output, and the reason automation is not yet practical.
 
 # Project Milestones
 
@@ -120,6 +102,8 @@ Every architectural decision should be recorded in `docs/DECISION_LOG.md`.  Incl
 # Guiding Principle
 
 Every completed task should improve at least one of: correctness, reproducibility, documentation, test coverage, logging, observability, maintainability, or autonomous verification.  The repository should become easier for the next contributor than it was for the current contributor.
+
+
 
 
 
