@@ -80,6 +80,8 @@ asked to save a transcript. Never rewrite or delete an existing transcript.
 When a gate applies, name the operation, name the path or command, explain why,
 and wait for an explicit yes. Silence is not consent.
 
+4. Never run `rm -rf`. Ask before deleting anything.
+
 ## Durable memory
 When you learn something about this project that would be useful to a session
 that has never seen it, append it to `.ai/MEMORY.md` under a dated heading.
