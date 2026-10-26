@@ -1,0 +1,50 @@
+{
+  "threshold": 80,
+  "criteria": [
+    {
+      "id": "T1",
+      "weight": 20,
+      "material": true
+    },
+    {
+      "id": "T2",
+      "weight": 20,
+      "material": true
+    },
+    {
+      "id": "T3",
+      "weight": 15,
+      "material": true
+    },
+    {
+      "id": "T4",
+      "weight": 15,
+      "material": true
+    },
+    {
+      "id": "T5",
+      "weight": 10,
+      "material": true
+    },
+    {
+      "id": "P1",
+      "weight": 5,
+      "material": true
+    },
+    {
+      "id": "P2",
+      "weight": 5,
+      "material": true
+    },
+    {
+      "id": "P3",
+      "weight": 5,
+      "material": true
+    },
+    {
+      "id": "P4",
+      "weight": 5,
+      "material": true
+    }
+  ]
+}
