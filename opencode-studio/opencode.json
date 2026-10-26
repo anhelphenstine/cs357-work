@@ -24,6 +24,13 @@
         }
       }
     }
+  },
+  "agent": {
+    "builder": {
+      "description": "Implements spec.md inside artifact/ under the project system prompt",
+      "mode": "primary",
+      "prompt": "{file:./system_prompt.txt}"
+    }
   }
 }
 
