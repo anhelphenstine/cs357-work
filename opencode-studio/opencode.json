@@ -9,8 +9,10 @@
     "*": "ask",
     "bash": {
       "*": "ask",
-      "git *": "allow"
-    }
+      "git *": "allow",
+      "rm *": "deny"
+    },
+    "edit": "deny"
   },
   "provider": {
     "ollama": {
