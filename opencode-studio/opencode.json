@@ -12,7 +12,7 @@
       "git *": "allow",
       "rm *": "deny"
     },
-    "edit": "deny"
+    "edit": "ask"
   },
   "provider": {
     "ollama": {
@@ -35,6 +35,4 @@
     }
   }
 }
-
-
 
