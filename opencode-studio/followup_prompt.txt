@@ -1,0 +1,8 @@
+I have scored this against rubric.md.  The following material criteria are below
+Meets and must be corrected before I accept it.
+
+1. artifact/search.py and artifact/test_search.py do not exist. Create them. 
+
+Do not change anything else.  Do not touch spec.md, rubric.md, rubric.json,
+system_prompt.txt, AGENTS.md, CHARTER.md, critique.md, or anything under .ai/ or docs/.
+
