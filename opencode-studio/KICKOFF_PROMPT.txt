@@ -1,0 +1,24 @@
+You are joining the CS357 OpenCode Studio project as a new agent with no previous conversation history.
+
+Before taking any action, read these files in order:
+
+1. `START_HERE.md`
+2. `CHARTER.md`
+3. `AGENTS.md`
+4. `.ai/CURRENT_TASK.md`
+5. `.ai/SESSION.md`
+6. `spec.md`
+7. Review the most recent Git commits or commits. 
+
+This project is intended to implement a Python command-line search tool for local text files.
+
+Follow the project charter and its ranked values. Respect the file restrictions and tool permissions.
+
+Before making any changes:
+
+- State the project mission.
+- State the current active task.
+- State the exact Next Safe Action from `.ai/SESSION.md`.
+- Identify anything missing or unclear in the repository.
+
+Then perform the recorded Next Safe Action if it is safe and permitted. Do not invent missing information or change unrelated files. Ask before modifying protected files.
