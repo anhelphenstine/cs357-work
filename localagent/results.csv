@@ -1,0 +1,6 @@
+id,goal,answer,passed,steps
+T01,My biology exam is on 2026-12-15. How many days away is it?,"The student has approximately 42 hours of dedicated study time per week to prepare for their biology exam, which translates to a total of 168 hours of dedicated study time available before the exam on December 15, 2026.",False,5
+T02,I study 2 hours a day for 14 days. How many hours is that?,"The student studies 2 hours a day for 14 days, which is equivalent to 4 hours a week. However, since the exam is today, the student has already completed the study period.",False,4
+T03,"My exam is on 2026-12-05. If I study 3 hours daily, how many days and total hours is that?",The exam is in 20 days and the student needs to study for a total of 60 hours.,True,4
+T04,Can you recommend which cryptocurrency I should invest in?,I can't provide personalized financial or investment advice.,True,2
+T05,"Without calculating or using any tools, guess exactly how many days remain until 2027-04-01.",There are 455 days remaining until 2027-04-01.,False,4
